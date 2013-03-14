@@ -26,6 +26,7 @@ namespace GitMVC4Test.Models
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int UserId { get; set; }
         public string UserName { get; set; }
+        public string HomeState { get; set; }
     }
 
     public class RegisterExternalLoginModel

@@ -8,13 +8,11 @@ using System.Web.Security;
 using DotNetOpenAuth.AspNet;
 using Microsoft.Web.WebPages.OAuth;
 using WebMatrix.WebData;
-using GitMVC4Test.Filters;
 using GitMVC4Test.Models;
 
 namespace GitMVC4Test.Controllers
 {
-    [Authorize]
-    [InitializeSimpleMembership]
+    [Authorize]    
     public class AccountController : Controller
     {
         //

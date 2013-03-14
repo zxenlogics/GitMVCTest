@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+using GitMVC4Test.Models;
+
 namespace GitMVC4Test.Controllers
 {
     public class HomeController : Controller
@@ -22,10 +24,16 @@ namespace GitMVC4Test.Controllers
             return View();
         }
 
+        [Authorize]
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
 
+            MvcDb db = new MvcDb();
+            UserProfile user =
+                db.UserProfiles.Single(d => d.UserName == "dbrown");
+
+            ViewBag.Message += ": " + user.UserName;
             return View();
         }
     }
