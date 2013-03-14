@@ -8,7 +8,7 @@ namespace GitMVC4Test.Models
 {
     public class MvcDb : DbContext
     {
-        public MvcDb(): base("DefaultConnection")
+        public MvcDb(): base("name=DefaultConnection")
         {
         }
 

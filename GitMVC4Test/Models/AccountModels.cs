@@ -9,15 +9,15 @@ using System.Web.Security;
 
 namespace GitMVC4Test.Models
 {
-    public class UsersContext : DbContext
-    {
-        public UsersContext()
-            : base("DefaultConnection")
-        {
-        }
+    //public class UsersContext : DbContext
+    //{
+    //    public UsersContext()
+    //        : base("DefaultConnection")
+    //    {
+    //    }
 
-        public DbSet<UserProfile> UserProfiles { get; set; }
-    }
+    //    public DbSet<UserProfile> UserProfiles { get; set; }
+    //}
 
     [Table("UserProfile")]
     public class UserProfile
@@ -27,6 +27,7 @@ namespace GitMVC4Test.Models
         public int UserId { get; set; }
         public string UserName { get; set; }
         public string HomeState { get; set; }
+        public string
     }
 
     public class RegisterExternalLoginModel
