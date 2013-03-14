@@ -27,7 +27,7 @@ namespace GitMVC4Test.Models
         public int UserId { get; set; }
         public string UserName { get; set; }
         public string HomeState { get; set; }
-        public string
+        public string Gender { get; set; }
     }
 
     public class RegisterExternalLoginModel
